@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">hw1_4m</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="pasworld">password\n</string>
+    <string name="email">Email\n</string>
+    <string name="next_fragment">Next Fragment</string>
+</resources>
