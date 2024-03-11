@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import com.geeks.hw1_4m.R
+import com.geeks.hw1_4m.User
 import com.geeks.hw1_4m.databinding.FragmentFirstBinding
 
 class FirstFragment : Fragment() {
@@ -29,10 +30,10 @@ class FirstFragment : Fragment() {
     private fun setupListener() {
         binding.btnNextFragment.setOnClickListener {
             findNavController().navigate(
-                FirstFragmentDirections.actionFirstFragmentToSecondFragment(
+                FirstFragmentDirections.actionFirstFragmentToSecondFragment(User(
                     binding.etEmail.text.toString(),
-                    binding.etPassword.text.toString()
-                )
+                    binding.etPassword.text.toString().toInt()
+                ))
             )
         }
     }

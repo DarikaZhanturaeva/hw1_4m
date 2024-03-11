@@ -23,13 +23,8 @@
             android:id="@+id/action_secondFragment_to_thirdFragment2"
             app:destination="@id/thirdFragment" />
         <argument
-            android:name="email"
-            app:argType="string"
-            android:defaultValue=" " />
-        <argument
-            android:name="password"
-            app:argType="string"
-            android:defaultValue=" " />
+            android:name="user"
+            app:argType="com.geeks.hw1_4m.User" />
     </fragment>
     <fragment
         android:id="@+id/thirdFragment"
